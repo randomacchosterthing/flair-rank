@@ -54,7 +54,7 @@ client.on('message', (message) => {
                         roblox.setRank(groupId, id, rankIdentifier)
                         .then(function(newRole){
                             message.channel.send(`Changed rank to ${newRole.Name}`)
-                            client.channels.get("485888130650472468").send(`${id}'s rank was changed to ${newRole.Name}. User: (Adding Soon)`)
+                            client.channels.get("485888130650472468").send(`${username}'s rank was changed to ${newRole.Name}. User who ranked them: (Adding Soon)`)
                         }).catch(function(err){
                             console.error(err)
                             message.channel.send("Failed to change rank.")
