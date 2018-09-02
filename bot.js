@@ -54,14 +54,14 @@ client.on('message', (message) => {
                         roblox.setRank(groupId, id, rankIdentifier)
                         .then(function(newRole){
                             message.channel.send(`Changed rank to ${newRole.Name}`)
-                            client.channels.get("485888130650472468").send(`${username}'s rank was changed to ${newRole.Name}. User who ranked them: (Adding Soon)`)
+                            client.channels.get("485888130650472468").send(`${username}'s rank was changed to ${newRole.Name} . User who ranked them: (Adding Soon)`)
                         }).catch(function(err){
                             console.error(err)
                             message.channel.send("Failed to change rank.")
                         });
                     }
                 }).catch(function(err){
-                    message.channel.send("Couldn't get that player in the group.")
+                    message.channel.send("That player isn't in the group.")
                 });
             }).catch(function(err){
                 message.channel.send(`Sorry, but ${username} doesn't exist on ROBLOX.`)
