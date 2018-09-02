@@ -1,0 +1,15 @@
+{
+  "name": "bot_flair",
+  "version": "1.0.0",
+  "description": "Ranks Flair Bot, using the system made by BunicornBoy. BunicornBoy reserves the right to take this bot down, edit the code, change descriptions, pictures and titles without notice or permission. BunicornBoy does not need permission as he is the owner of this bot.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BunicornBoy",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "roblox-js": "^2.3.8"
+  }
+}
