@@ -36,7 +36,7 @@ client.on('message', (message) => {
     var args = message.content.split(/[ ]+/)
    
     if(isCommand('rank', message)){
-       if(!message.member.roles.some(r=>["High Ranks"].includes(r.name)) ) // OPTIONAL - Checks if the sender has the specified roles to carry on further
+       if(!message.member.roles.some(r=>["Rank Bot User"].includes(r.name)) ) // OPTIONAL - Checks if the sender has the specified roles to carry on further
         return message.reply("You can't use this command.");
         var username = args[1]
         var rankIdentifier = Number(args[2]) ? Number(args[2]) : args[2];
