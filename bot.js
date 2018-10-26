@@ -1,13 +1,13 @@
 const roblox = require('roblox-js')
 const discord = require('discord.js')
-const token = process.env.token;
+const token = process.env.Token;
 var client = new discord.Client();
-var prefix = '/';
+var prefix = '#';
 var groupId = 4040978;
-var maximumRank = 13;
+var maximumRank = 12;
 
-var username = process.env.username;
-var password = process.env.password;
+var username = process.env.Username;
+var password = process.env.Password;
 
 client.login(token)
 
